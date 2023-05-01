@@ -4,6 +4,7 @@ import AllMeetupsPage from './pages/AllMeetups';
 import NewMeetupPage from './pages/NewMeetup';
 import FavoritesPage from './pages/Favorites';
 import Layout from './components/layout/Layout'
+import Login from './pages/Login';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Layout>
         <Routes>
           <Route path='/' element={<AllMeetupsPage/>} />
+          <Route path='/login' element={<Login/>} />
           <Route path='/new-meetup' element={<NewMeetupPage />}/>        
           <Route path='/favorites' element={<FavoritesPage />}/>
         </Routes>
